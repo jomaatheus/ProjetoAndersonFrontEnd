@@ -1,0 +1,66 @@
+body {
+  background-color: #d3d3d3;
+}
+main {
+  position: relative;
+  top: 100px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.container-main {
+  height: 30em;
+  width: 29em;
+}
+
+.container-formulario {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.main-header {
+  background-color: rgb(119, 129, 207);
+  height: 20%;
+}
+
+.main-header h1 {
+  color: white;
+  margin: 1.5em 0 0.5em 0.7em;
+}
+
+.form {
+  width: 90%;
+  margin: auto;
+}
+
+.form,
+.form label {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font: bold;
+  font-size: 1em;
+}
+
+.form input,
+.msg {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 1em 0 0 1em;
+  font-size: 1em;
+}
+
+.form input:focus {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.form label {
+  margin: 2em 0;
+}

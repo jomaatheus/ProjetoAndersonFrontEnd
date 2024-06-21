@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap");
+
+body {
+  background-image: url(../images/planoDeFundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  height: 100vh;
+}
+
+.main {
+  position: relative;
+  top: 120px;
+  width: 100vw;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+}
+
+.conteudo {
+  width: 50%;
+  margin-left: 2em;
+}
+
+.conteudo h1,
+p {
+  color: white;
+}
+
+.conteudo h1 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+}
+
+.conteudo p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    justify-content: start;
+    top: 150px;
+  }
+}

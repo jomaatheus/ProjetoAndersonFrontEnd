@@ -1,0 +1,171 @@
+@keyframes flutuando {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+
+  100% {
+    transform: translateY(7px);
+  }
+}
+
+body {
+  background-color: #d3d3d3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  background-color: #fff;
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.container-carrinhoCompras {
+  width: 4em;
+  border: 4px solid black;
+  border-radius: 50%;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 1;
+  background-color: white;
+}
+
+.container-carrinhoCompras:hover {
+  background-color: #d3d3d3;
+}
+
+#qntdd-compra {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.5em;
+  position: relative;
+  right: 0;
+}
+
+.carrinhoCompras img {
+  width: 100%;
+  padding: 0.75em;
+  cursor: pointer;
+}
+
+.titulo-categoria {
+  margin-top: 1em;
+  text-align: center;
+  font-weight: bolder;
+}
+
+main .categoria {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 1em;
+  animation: flutuando 3s ease-in-out infinite alternate;
+}
+
+.chinelo,
+.tenis {
+  background-color: white;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 50%;
+  padding: 2em 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  box-shadow: 0 10px 7px black;
+  color: black;
+}
+
+.chinelo:hover,
+.tenis:hover {
+  background-color: #d3d3d3;
+}
+
+.titulo-produtos {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.container-cards {
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1em;
+  justify-content: center;
+}
+
+.cards {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  width: 13.5em;
+  height: 20em;
+  max-height: 22em;
+  border: 2px solid #d3d3d3;
+  /* margin-bottom: 1em; */
+}
+
+.imagem {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.imagem img {
+  width: 100%;
+  transition: 0.1s;
+}
+
+.imagem img:hover {
+  transform: scale(1.1);
+}
+
+.imagem-descricao {
+  font-size: 1.1rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preco-e-botao {
+  display: flex;
+  gap: 1em;
+  margin: 1em 0;
+  align-items: center;
+}
+
+.preco-e-botao a {
+  background-color: green;
+  font-weight: bolder;
+  padding: 0.5em 0.7em;
+  color: white;
+  border-radius: 0.3em;
+  transition: 0.2s;
+}
+
+.preco-e-botao a:hover {
+  transform: scale(1.1);
+}
+
+.preco {
+  color: #018001;
+  font-size: 1.6rem;
+  font-weight: bold;
+}

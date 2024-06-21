@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMPRAR</title>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/comprar.css" />
+    <script src="js/menu.js" type="module" defer></script>
+    <script src="js/produtos.js" type="module" defer></script>
+    <script src="js/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1><a href="index.html">Passo Certo</a></h1>
+        </div>
+
+        <nav class="nav-menu-desktop">
+          <ul>
+            <li><a href="comprar.html">Comprar</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contate.html">Contate-nos</a></li>
+            <input type="text" placeholder="pesquisar" id="pesquisar" />
+          </ul>
+        </nav>
+
+        <nav class="nav-menu-mobile">
+          <ul>
+            <li><a href="index.html">Comprar</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contate.html">Contate-nos</a></li>
+            <!-- <input type="text" placeholder="pesquisar" id="pesquisar" /> -->
+          </ul>
+        </nav>
+
+        <div class="menu-icon" onclick="menuShow()">
+          <img src="images/menu.png" alt="icone do menu" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-carrinhoCompras">
+        <span id="qntdd-compra"></span>
+        <div id="carrinho-compras" class="carrinhoCompras">
+          <img src="images/carrinho-de-compras.png" alt="" />
+        </div>
+      </div>
+      <h1 class="titulo-categoria">Categoria</h1>
+      <div class="categoria">
+        <a href="#chinelo" class="chinelo">Chinelo</a>
+        <a href="#tenis" class="tenis">tenis</a>
+      </div>
+
+      <h1 class="titulo-produtos" id="tenis">Produtos - tenis</h1>
+      <!-- container onde vai estar todos os cards -->
+      <section class="container-cards">
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/pngegg.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>tenis nike 1</h1>
+            <div class="preco-e-botao">
+              <a href="#" onclick="addCarrinho(this)" class="btn-comprar"
+                >comprar</a
+              >
+              <h3><span class="preco">90R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/tenis2.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>tenis adidads 2</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">80R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/tenis3.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>tenis airfoce 6</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">92R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/tenis4.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>tenis cavaleira</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">62R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/tenis5.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>tenis tarara</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">52R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/tenis6.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>tenis nike air jordan</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">42R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/tenis7.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>tenis airdrop</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">10R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/tenis8.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>tenis azul</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">105R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/tenis9.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>tenis pulma</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">200R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/tenis10.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>tenis polo</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">202R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/tenis11.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>tenis polo 2</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">302R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/tenis12.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>tenis adidas</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">22R$</span></h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- produtos chinelos -->
+
+      <h1 class="titulo-produtos" id="chinelo">Produtos - chinelo</h1>
+      <!-- container onde vai estar todos os cards -->
+      <section class="container-cards">
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/chinelo1.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>chinelo 1</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">30R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/chinelo2.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>chinelo 2</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">20R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/chinelo3.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>chinelo 3</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">20R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/chinelo4.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>chinelo4</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">30R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/chinelo5.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>chinelo5</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">92R$</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="imagem">
+            <img src="images/chinelo6.png" alt="" />
+          </div>
+          <div class="imagem-descricao">
+            <h1>chinelo6</h1>
+            <div class="preco-e-botao">
+              <a href="#" class="btn-comprar">comprar</a>
+              <h3><span class="preco">100R$</span></h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

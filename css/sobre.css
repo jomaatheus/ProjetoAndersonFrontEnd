@@ -1,0 +1,36 @@
+body {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-sobre-nos {
+  position: relative;
+  top: 100px;
+  width: 80%;
+  margin: auto;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  flex: 1;
+}
+
+/* seleciona todas as div dentro do container */
+.container-sobre-nos > * {
+  background-color: #242121;
+  color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 5px 0 0.75em black;
+}
+
+.sobre-nos,
+.nossa-missao,
+.nossos-valores,
+h2 {
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1300px) {
+}
