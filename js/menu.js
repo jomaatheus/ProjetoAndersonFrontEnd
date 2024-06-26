@@ -1,4 +1,4 @@
-function menuShow() {
+export function menuShow() {
   let menuMobile = document.querySelector(".nav-menu-mobile ul");
 
   if (menuMobile.classList.contains('active')) {
